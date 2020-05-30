@@ -35,14 +35,13 @@
   box-shadow: 10px 10px 25px black;
 }
 .about-myself {
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
   font-weight: 800;
-  font-family: 'Roboto';
+  font-family: 'Pacifico';
   font-size: 2.8rem;
   font-weight:200;
   padding: 25px;
   color: #f53b57;
-  text-transform: uppercase;
   text-align: center;
 }
 .about-myself-text {
