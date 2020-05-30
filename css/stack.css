@@ -1,0 +1,132 @@
+/* Global page animation delay styling */
+.animate__animated.animate__fadeInDown {
+  animation-duration: 2.5s;
+}
+.animate__animated.animate__zoomInDown.react {
+  animation-delay: .2s;
+}
+.animate__animated.animate__zoomInDown.python {
+  animation-delay: .45s;
+}
+.animate__animated.animate__zoomInDown.html {
+  animation-delay: .7s;
+}
+.animate__animated.animate__zoomInDown.css {
+  animation-delay: .95s;
+}
+.animate__animated.animate__zoomInDown.flutter {
+  animation-delay: 1.2s;
+}
+.animate__animated.animate__zoomInDown.dart {
+  animation-delay: 1.45s;
+}
+.animate__animated.animate__zoomInDown.sql {
+  animation-delay: 1.7s;
+}
+.stack-content {
+  width:100%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.current {
+  font-family: 'Pacifico';
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 3rem;
+}
+/* PROGRESS BAR STYLING */
+ul {
+  width: 600px;
+}
+li {
+  position: relative;
+  list-style: none;
+  margin: 9% 0;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+li::before {
+  content: "";
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  width: 100%;
+  height: 15px;
+  background-color: #7efff5;
+  border-radius: 1000px;
+  opacity: .65;
+}
+li::after {
+  content: "";
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  width: 0;
+  height: 15px;
+  background-color: #f53b57;
+  border-radius: 1000px;
+  opacity: 1;
+  animation-duration: 1.5s;
+  animation-delay: 2.6s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+li.react::after {
+  animation-name: react;
+}
+@keyframes react {
+  to {
+    width: 90%;
+  }
+}
+li.python::after {
+  animation-name: python;
+}
+@keyframes python {
+  to {
+    width: 85%;
+  }
+}
+li.html::after {
+  animation-name: html;
+}
+@keyframes html {
+  to {
+    width: 75%;
+  }
+}
+li.css::after {
+  animation-name: css;
+}
+@keyframes css {
+  to {
+    width: 75%;
+  }
+}
+li.flutter::after {
+  animation-name: flutter;
+}
+@keyframes flutter {
+  to {
+    width: 65%;
+  }
+}
+li.dart::after {
+  animation-name: dart;
+}
+@keyframes dart {
+  to {
+    width: 65%;
+  }
+}
+li.sql::after {
+  animation-name: sql;
+}
+@keyframes sql {
+  to {
+    width: 50%;
+  }
+}

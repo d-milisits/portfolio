@@ -1,0 +1,46 @@
+:root {
+  --animate-duration: 4999ms;
+  --animation-delay: 0.9s;
+}
+button{
+  background:#7efff5;
+  color: #1e272e;
+  border:none;
+  position:relative;
+  height:45px;
+  font-size:1em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding:0 1.3em;
+  cursor:pointer;
+  outline:none;
+  margin-top: 5vh;
+}
+button:hover{
+  background:#1e272e;
+  transition:400ms ease all;
+  color:#f53b57;
+}
+button:before,button:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #f53b57;
+  transition:400ms ease all;
+}
+button:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+button:hover:before,button:hover:after{
+  width:100%;
+  transition:400ms ease all;
+}
+.increase {
+  padding: 0 2.5rem;
+}

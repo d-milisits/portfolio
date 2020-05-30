@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dan Milisits</title>
+    <link rel="stylesheet" type="text/css" href="css/portfolio.css">
+    <link rel="stylesheet" type="text/css" href="css/mail.css">
+    <link rel="stylesheet" type="text/css" href="css/button.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    <link rel="stylesheet" href="css/all.min.css"/>
+    <link rel="stylesheet" href="css/fontawesome.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="navbar">
+      <i class="fas fa-home" onclick="flyRight('portfolio.html')"></i>
+      <a href="https://github.com/d-milisits" target="_blank"><i class="fab fa-github-square"></i></a>
+      <a href="https://www.linkedin.com/in/daniel-milisits/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <div id="success-message" class="success-message">
+      <h1><span class="red">Thank you!</span><br><span class="thin">Your message has been sent.</span></h1>
+    </div>
+    <div id="main-page" class="main-page">
+      <div class="email-form">
+        <div class="animate__animated animate__fadeInDown">
+          <h1 class="work-together">Let's work<br><span class="red">together<span class="white">!</span></span></h1>
+        </div>
+        <div class="group animate__animated animate__zoomInDown">      
+          <input type="text" required>
+          <span class="highlight"></span>
+          <span class="bar"></span>
+          <label>Name</label>
+        </div>
+        <div class="group animate__animated animate__zoomInDown two">      
+          <input type="text" required>
+          <span class="highlight"></span>
+          <span class="bar"></span>
+          <label>E-Mail</label>
+        </div>
+        <div class="group animate__animated animate__zoomInDown three">      
+          <input type="text" required>
+          <span class="highlight"></span>
+          <span class="bar"></span>
+          <label>Message</label>
+        </div>
+        <button class="animate__animated animate__fadeInUp" onclick="blurAndPrompt('mail')">Contact Me!</button>
+      </div>
+    </div>
+      <script src="app.js"></script>
+  </body>
+</html>

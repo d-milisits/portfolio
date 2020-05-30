@@ -1,0 +1,107 @@
+/* Animation duration change */
+.animate__animated.animate__fadeIn {
+  animation-duration: 3s;
+}
+.animate__animated.animate__fadeIn.two {
+  animation-delay: 1.8s;
+}
+.animate__animated.animate__zoomInDown {
+  animation-delay: .25s;
+}
+.animate__animated.animate__zoomInDown.two {
+  animation-delay: .55s;
+}
+.animate__animated.animate__zoomInDown.three {
+  animation-delay: .85s;
+}
+/* About me section (left side) */
+.about-me {
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 10%;
+  z-index: 500;
+}
+.about-me, .about-me-info {
+  flex:1;
+}
+.about-me-img {
+  height: 150px;
+  width: 150px;
+  background-image: url("../img/my-photo.jpg");
+  background-size: cover;
+  border-radius: 100%;
+  box-shadow: 10px 10px 25px black;
+}
+.about-myself {
+  letter-spacing: 1px;
+  font-weight: 800;
+  font-family: 'Roboto';
+  font-size: 2.8rem;
+  font-weight:200;
+  padding: 25px;
+  color: #f53b57;
+  text-transform: uppercase;
+  text-align: center;
+}
+.about-myself-text {
+  max-width: 60%;
+  letter-spacing: 3px;
+  font-weight: 200;
+  text-align: center;
+  font-size: 1rem;
+}
+/* About me info section (right side) */
+.about-me-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding:50px;
+}
+.info-box {
+  display:flex;
+  flex-direction: column;
+}
+.info-title {
+  font-weight: 200;
+  letter-spacing: -.25px;
+  font-size: 1.75rem;
+  text-align: center;
+  padding: 25px;
+  color: #7efff5;
+  font-family: 'Roboto';
+  text-transform: uppercase;
+}
+.info-box-content {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.info-box-content i {
+  padding: 25px;
+  color: #f53b57;
+}
+.info-box-content p {
+  max-width: 50%;
+  text-align: center;
+  padding: 20px;
+  letter-spacing: 2px;
+}
+.code {
+  letter-spacing: 2px;
+  padding:20px 50px;
+}
+.code .purple {
+  color: #be2edd;
+}
+.code .green {
+  color: #44bd32;
+}
+.indent {
+  margin-left: 25px;
+}
+.indent2 {
+  margin-left: 45px;
+}
