@@ -32,7 +32,7 @@
 /* Page */
 span {
   font-size: 5rem;
-  opacity: .5;
+  /* opacity: .5; */
 }
 .red {
   color: #f53b57;
@@ -143,4 +143,16 @@ input:focus ~ .highlight {
 @keyframes inputHighlighter {
 	from { background:#f53b57; }
   to 	{ width:0; background:transparent; }
+}
+.cursive {
+  font-family: 'Pacifico';
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  text-transform: none;
+  font-weight: 200;
+  padding:0;
+}
+.exc {
+  font-size: 3.5rem;
+  padding-left: 10px;
 }
