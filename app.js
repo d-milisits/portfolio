@@ -40,7 +40,6 @@ function flyRight(route) {
 }
 
 function blurAndPrompt(target) {
-
   if (target=="mail") {
     var a = document.getElementById('main-page');
     var b = document.getElementById('success-message');
@@ -69,5 +68,22 @@ function blurAndPrompt(target) {
       }, 200);
     }, 1250);
   }
+}
 
+function sendMessage() {
+  var errorField = document.getElementById('error');
+  name = document.getElementById("name").value;
+  email = document.getElementById("email").value;
+  message = document.getElementById("message").value;
+  if ((name=="") || (email=="") || (message=="")) {
+    errorField.className = "error animate__animated animate__headShake shown";
+    console.log("HELO");
+  }
+  else {
+    blurAndPrompt('mail');
+    document.getElementById("name").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("message").value = "";
+    errorField.className = "error";
+  }
 }

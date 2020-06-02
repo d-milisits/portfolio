@@ -16,11 +16,11 @@
   animation-delay: 1.5s;
 }
 .main-page {
+  max-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: Arial, Helvetica, sans-serif;
-  transition: .5s all ease;
 }
 .email-form {
   display:flex;
@@ -155,4 +155,17 @@ input:focus ~ .highlight {
 .exc {
   font-size: 3.5rem;
   padding-left: 10px;
+}
+/* FORM ERROR MESSAGE */
+.error {
+  visibility: hidden;
+}
+.shown {
+  visibility: visible;
+  padding-bottom:45px;
+}
+.error-message {
+  text-transform: uppercase;
+  letter-spacing: 1.25px;
+  color: #f53b57;
 }
