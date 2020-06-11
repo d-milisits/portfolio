@@ -1,0 +1,354 @@
+* {
+  margin:0;
+  padding:0;
+  font-family: 'Roboto';
+}
+/* Globally bolds all spans */
+.first {
+  font-weight: 900;
+}
+.underline {
+  width:50vw;
+  padding-bottom: 10px;
+  border-top: 1px solid black;
+}
+
+/* Project introduction styling */
+.intro-container {
+  color:black;
+  padding: 200px 0;
+}
+.intro-content {
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height:100%;
+}
+.intro-content h1 {
+  font-size:3.5rem;
+  max-width:80%;
+  letter-spacing: 2.5px;
+  font-weight:425;
+  text-transform: uppercase;
+}
+.intro-content p {
+  font-size:1.3rem;
+  font-weight: 200;
+  letter-spacing: 2.2px;
+}
+
+/* The Cause styling */
+.cause-content {
+  display:flex;
+  height: 100%;
+}
+
+/* CAUSE--INFO Styling */
+.cause-info {
+  flex:1;
+  display:flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  padding: 60px 0;
+}
+.cause-info #why {
+  align-self: flex-start;
+  padding-left:10vw;
+  font-size:2rem;
+  letter-spacing: 2px;
+  padding-bottom: 15px;
+}
+.cause-info #info-text {
+  max-width: 60%;
+  letter-spacing: 1px;
+  line-height: 25px;
+}
+
+/* CAUSE--IMAGE Styling */
+.cause-img {
+  flex:1;
+}
+.cause-img img {
+  width:100%;
+  height:100%;
+}
+
+/* The Campaign Styling */
+.campaign-content {
+  height:100%;
+  display:flex;
+  background-color: #82ccdd;
+  padding: 75px 0;
+}
+
+/* CAMPAIGN--IMAGE Styling */
+.campaign-img {
+  flex:1;
+  display:flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+}
+.campaign-img img {
+  width: 50%;
+  height: auto;
+  padding-left:20vw;
+}
+
+/* CAMPAIGN-- INFO Styling */
+.campaign-info {
+  flex:1;
+  display:flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  padding-right:10vw;
+}
+.campaign-info #what {
+  align-self: flex-start;
+  padding-left: 8.5vw;
+  font-size:2rem;
+  letter-spacing: 2px;
+  padding-bottom: 15px;
+}
+.campaign-info #info-text {
+  max-width: 60%;
+  letter-spacing: 1px;
+  line-height: 25px;
+  max-height:100%;
+}
+
+/* PARTNER--HEADER Styling */
+.partner-header {
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+  font-size:2rem;
+  letter-spacing: 2px;
+  padding-top: 60px;
+}
+.partner-header .underline {
+  width:30vw;
+  margin-top:13px;
+}
+/* PARTNER-- INFO Styling */
+.partner-info {
+  display:flex;
+  justify-content: space-evenly;
+  width:auto;
+  height:auto;
+  padding-bottom: 100px;
+  padding-top: 60px;
+}
+.partner-info h2 {
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+}
+.partner-info img {
+  height:auto;
+  width: 13vw;
+  padding: 20px 0;
+}
+.partner-info p {
+  max-width: 25vw;
+  margin-top:20px;
+  letter-spacing: 1.1px;
+  text-align: center;
+}
+.partner-info .partner1 {
+  display:flex;
+  flex:1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+}
+.partner-info .partner2 {
+  display:flex;
+  flex:1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+}
+.partner-info .partner3 {
+  display:flex;
+  flex:1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+}
+
+/* Resources Section Styling */
+.resource-content {
+  display:flex;
+  margin: 40px 65px;
+}
+.resource-offers {
+  display: flex;
+  text-align: center;
+}
+.resource-offers img {
+  height:12vh;
+  width:12vh;
+}
+.resource-offers h2 {
+  padding: 20px 0;
+  text-transform: uppercase;
+}
+.resource-offers .resource1, .resource2, .resource3 {
+  border: 1.4px solid black;
+  margin: 0 25px;
+  padding: 50px;
+}
+
+.resource-disc {
+  flex: 2;
+}
+
+/* Call To Action Button/Text Styling */
+.call-to-action {
+  padding-top: 30px;
+  padding-bottom: 150px;
+  margin:auto;
+  max-width: 50%;
+  text-align: center;
+  text-transform: uppercase;
+}
+.call-to-action h2 {
+  padding-bottom:50px;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+.call-to-action a {
+  text-decoration: none;
+  padding:15px 25px;
+  color: white;
+  background-color: #d63031;
+  border:none;
+  font-size: 1.1rem;
+  letter-spacing: 2.3px;
+}
+/* MOBILE MEDIA QUERY */
+@media (max-width: 990px) {
+
+  /* PROJECT INTRO */
+  .intro-container {
+    padding: 100px 0;
+  }
+  .intro-content h1 {
+    font-size:2.3rem;
+    max-width:80%;
+    letter-spacing: 1.2px;
+    font-weight:625;
+  }
+  .intro-content p {
+    padding-top: 10px;
+    font-size:0.9rem;
+    letter-spacing: 1.2px;
+    font-weight: 350;
+  }
+
+  /* THE CAUSE */
+  .cause-content {
+    flex-direction: column;
+  }
+  .cause-info {
+    padding-top:0;
+    padding-bottom:75px;
+  }
+  .cause-info #why {
+    align-self: center;
+    padding-left:0;
+    text-align: center;
+    font-size:1.5rem;
+  }
+  .cause-info #info-text {
+    max-width: 75%;
+    font-size: .75rem;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  /* THE CAMPAIGN */
+  .campaign-content {
+    flex-direction: column;
+    padding-top:50px;
+    background-color:transparent;
+  }
+  .campaign-img img {
+    display:none;
+  }
+  .campaign-info {
+    padding:50px 0;
+  }
+  .campaign-info #what {
+    align-self: center;
+    padding-left:0;
+    text-align: center;
+    font-size:1.5rem;
+  }
+  .campaign-info #info-text {
+    max-width: 75%;
+    font-size: .75rem;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  /* PARTNERS */
+  .partner-header {
+    padding:0;
+    font-size:1.5rem;
+  }
+  .partner-info {
+    font-size: .9rem;
+  }
+  .partner-info p {
+    max-width: 28vw;
+    text-align: center;
+    font-size: .75rem;
+    line-height: 20px;
+  }
+
+  /* RESOURCES */
+  .resource-content {
+    margin: 0;
+    margin-bottom: 50px;
+    width:auto;
+    height:auto;
+  }
+  .resource-offers p {
+    font-size: .75rem;
+    line-height: 19px;
+  }
+
+}
+
+/* Simple media queries to fix minor bugs */
+@media (max-width: 864px) {
+  .resource-offers {
+    flex-wrap: wrap;
+    padding:30px;
+  }
+  .partner-info {
+    flex-direction: column;
+  }
+  .partner-info p {
+    max-width: 60vw;
+  }
+  .partner-info .partner1, .partner-info .partner2 {
+    padding-bottom: 40px;
+  }
+}
+@media (max-width: 600px) {
+  .partner-info p {
+    max-width:80vw;
+    margin-bottom: 35px;
+  }
+  .call-to-action {
+    max-width: 75%;
+  }
+}

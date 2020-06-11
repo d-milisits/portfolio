@@ -1,22 +1,5 @@
-/* Animation duration change */
-.animate__animated.animate__fadeInDown, .animate__animated.animate__fadeInUp {
-  animation-duration: 2s;
-  text-align:center;
-}
-.animate__animated.animate__zoomInDown {
-  animation-delay: .2s;
-}
-.animate__animated.animate__zoomInDown.two {
-  animation-delay: .5s;
-}
-.animate__animated.animate__zoomInDown.three {
-  animation-delay: .7s;
-}
-.animate__animated.animate__fadeInUp {
-  animation-delay: 1.5s;
-}
 .main-page {
-  max-height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,7 +15,6 @@
 /* Page */
 span {
   font-size: 5rem;
-  /* opacity: .5; */
 }
 .red {
   color: #f53b57;

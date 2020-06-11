@@ -9,45 +9,49 @@
     <link rel="stylesheet" href="css/all.min.css"/>
     <link rel="stylesheet" href="css/fontawesome.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script src="app.js"></script>
   </head>
-  <body>
+  <body onload="blurAndPrompt('mail')">
     <div class="navbar">
       <i class="fas fa-home" onclick="flyRight('portfolio.html')"></i>
       <a href="https://github.com/d-milisits" target="_blank"><i class="fab fa-github-square"></i></a>
       <a href="https://www.linkedin.com/in/daniel-milisits/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <i class="fa fa-code" aria-hidden="true" onclick="flyRight('myWork.html')"></i>
     </div>
     <div id="success-message" class="success-message">
-      <h1><span class="red">Thank you!</span><br><span class="thin">Your message has been sent.</span></h1>
+      <h1><span class="red">Thanks for your interest!</span><br><span class="thin">Enter your details below.</span></h1>
     </div>
     <div id="main-page" class="main-page">
-      <div class="email-form">
-        <div class="animate__animated animate__fadeInDown">
-          <h1 class="work-together"><span class="cursive">Let's work</span><br><span class="red">together<span class="white"><span class="cursive exc">!</span></span></span></h1>
+      <form action="https://formspree.io/danthedev9557@gmail.com" method="POST"> 
+        <div class="email-form">
+          <div class="animate__animated animate__fadeInDown">
+            <h1 class="work-together"><span class="cursive">Let's work</span><br><span class="red">together<span class="white"><span class="cursive exc">!</span></span></span></h1>
+          </div>
+          <div id="error" class="error">
+            <p class="error-message">Please fill out all required fields!</p>
+          </div>
+          <div class="group animate__animated animate__fadeIn one">      
+            <input id="name" name="name" type="text" autocomplete="off" required>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>Name</label>
+          </div>
+          <div class="group animate__animated animate__fadeIn two">      
+            <input id="email" name="email" type="text" autocomplete="off" required>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>E-Mail</label>
+          </div>
+          <div class="group animate__animated animate__fadeIn three">      
+            <input id="message" name="message" type="text" autocomplete="off" required>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>Message</label>
+          </div>
+          <button class="animate__animated animate__fadeInUp" onclick="sendMessage()">Contact Me!</button>
         </div>
-        <div id="error" class="error">
-          <p class="error-message">Please fill out all required fields!</p>
-        </div>
-        <div class="group animate__animated animate__zoomInDown">      
-          <input id="name" type="text" autocomplete="off" required>
-          <span class="highlight"></span>
-          <span class="bar"></span>
-          <label>Name</label>
-        </div>
-        <div class="group animate__animated animate__zoomInDown two">      
-          <input id="email" type="text" autocomplete="off" required>
-          <span class="highlight"></span>
-          <span class="bar"></span>
-          <label>E-Mail</label>
-        </div>
-        <div class="group animate__animated animate__zoomInDown three">      
-          <input id="message" type="text" autocomplete="off" required>
-          <span class="highlight"></span>
-          <span class="bar"></span>
-          <label>Message</label>
-        </div>
-        <button class="animate__animated animate__fadeInUp" onclick="sendMessage()">Contact Me!</button>
-      </div>
+      </form>
     </div>
-      <script src="app.js"></script>
   </body>
 </html>

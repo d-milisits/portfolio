@@ -2,16 +2,16 @@
 .animate__animated.animate__fadeIn {
   animation-duration: 3s;
 }
-.animate__animated.animate__fadeIn.two {
-  animation-delay: 1.8s;
+.animate__animated.animate__fadeIn.four {
+  animation-delay: 1.6s;
 }
-.animate__animated.animate__zoomInDown {
+.animate__animated.animate__fadeIn.one {
   animation-delay: .25s;
 }
-.animate__animated.animate__zoomInDown.two {
+.animate__animated.animate__fadeIn.two {
   animation-delay: .55s;
 }
-.animate__animated.animate__zoomInDown.three {
+.animate__animated.animate__fadeIn.three {
   animation-delay: .85s;
 }
 /* About me section (left side) */

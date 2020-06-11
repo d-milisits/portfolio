@@ -43,14 +43,16 @@ function blurAndPrompt(target) {
   if (target=="mail") {
     var a = document.getElementById('main-page');
     var b = document.getElementById('success-message');
-    a.className += " blur";
+    setTimeout(function() {
+      a.className += " blur";
+    }, 2250);
     setTimeout(function() {
       b.className += " animate__animated animate__fadeIn shown";
-    }, 350);
+    }, 2425);
     setTimeout(function() {
       a.className = "main-page";
       b.className = "success-message";
-    }, 2000);
+    }, 4000);
   }
 
   if(target=="home") {
@@ -77,13 +79,11 @@ function sendMessage() {
   message = document.getElementById("message").value;
   if ((name=="") || (email=="") || (message=="")) {
     errorField.className = "error animate__animated animate__headShake shown";
-    console.log("HELO");
   }
   else {
-    blurAndPrompt('mail');
-    document.getElementById("name").value = "";
-    document.getElementById("email").value = "";
-    document.getElementById("message").value = "";
+    // document.getElementById("name").value = "";
+    // document.getElementById("email").value = "";
+    // document.getElementById("message").value = "";
     errorField.className = "error";
   }
 }

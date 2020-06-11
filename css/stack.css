@@ -1,27 +1,24 @@
 /* Global page animation delay styling */
-.animate__animated.animate__fadeInDown {
-  animation-duration: 2.5s;
+.animate__animated.animate__fadeIn.react {
+  animation-delay: 1.5s;
 }
-.animate__animated.animate__zoomInDown.react {
-  animation-delay: .2s;
+.animate__animated.animate__fadeIn.python {
+  animation-delay: 1.75s;
 }
-.animate__animated.animate__zoomInDown.python {
-  animation-delay: .45s;
+.animate__animated.animate__fadeIn.html {
+  animation-delay: 2s;
 }
-.animate__animated.animate__zoomInDown.html {
-  animation-delay: .7s;
+.animate__animated.animate__fadeIn.css {
+  animation-delay: 2.25s;
 }
-.animate__animated.animate__zoomInDown.css {
-  animation-delay: .95s;
+.animate__animated.animate__fadeIn.flutter {
+  animation-delay: 2.5s;
 }
-.animate__animated.animate__zoomInDown.flutter {
-  animation-delay: 1.2s;
+.animate__animated.animate__fadeIn.dart {
+  animation-delay: 2.75s;
 }
-.animate__animated.animate__zoomInDown.dart {
-  animation-delay: 1.45s;
-}
-.animate__animated.animate__zoomInDown.sql {
-  animation-delay: 1.7s;
+.animate__animated.animate__fadeIn.sql {
+  animation-delay: 3s;
 }
 .stack-content {
   width:100%;
@@ -69,8 +66,8 @@ li::after {
   background-color: #f53b57;
   border-radius: 1000px;
   opacity: 1;
-  animation-duration: 1.5s;
-  animation-delay: 2.6s;
+  animation-duration: 1.3s;
+  animation-delay: 3.35s;
   animation-timing-function: ease;
   animation-fill-mode: forwards;
 }

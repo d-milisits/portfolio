@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AACTIV</title>
+    <link rel="stylesheet" type="text/css" href="./AACTIV.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <script>
+      // Animation for navbar opening
+      function Animation() {
+        const selectElement = function (element) {
+          return document.querySelector(element);
+        };
+        
+        let body = selectElement('.page');
+
+        body.classList.toggle('open');
+      }
+    </script>
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <div class="container">
+          <nav class="nav">
+            <h1 class="aactiv">AACTIV</h1>
+            <div class="menu-toggle">
+              <p onclick="Animation()" class="menu">&#x2630;</p>   
+              <p onclick="Animation()" class="times">&#x2716;</p>
+            </div> 
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a href="#" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">My Profile</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Log In</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <!-- {/* END OF HEADER SECTION */} -->
+      <section class="hero" id="hero">
+          <div class="container">
+            <h2 class="sub-headline">
+              Power In Variety.
+            </h2>
+            <img class="logo" src="AACTIVimg/logo.png" alt="Logo" />
+            <div class="headline-description">
+              <div class="separator">
+                <div class="line line-left"></div>
+                <div class="asterisk">
+                  <p>&#x26AC;</p>
+                </div>
+                <div class="line line-right"></div>
+              </div>
+              <div class="single-animation">
+                <a href="#" class="btn cta-btn">transform</a>
+              </div>
+            </div>
+          </div>
+      </section>
+      <!-- {/* END OF HERO SECTION */} -->
+      <section class="the-point">
+        <div class="container-two point">
+          <div class="point-info">
+            <div class="point-text padding-right animate-left">
+              <div class="global-headline">
+                <h2 class="sub-headline">
+                  The <span class="first-letter">P</span>oint
+                </h2>
+                <h1 class="headline headline-dark">Why AACTIV?</h1>
+                <div class="asterisk"><p>&#x26AC;</p></div>
+              </div>
+              <p>
+              Having the same workout routines week after weeks is not only boring, but detremental to your development. The human body is incredibly smart and recognizes patterns, thus making it harder progress with repetitive routines. Become a member of the AACTIV community and programmatically generate unique workouts day by day, making it nearly impossible for your body to remain in a state of comfort.
+              </p>
+              <a href="#" class="btn body-btn">How To Use AACTIV</a>
+            </div>
+          </div>
+          <div class="point-info-img">
+            .
+          </div>
+        </div>
+      </section>
+      <!-- {/* END OF POINT SECTION */} -->
+      <section class="get-started">
+        <div class="container-two started">
+          <div class="get-started-img">
+          </div>
+          <div class="start-info">
+            <div class="start-text">
+            <div class="global-headline">
+                <h2 class="sub-headline">
+                  It's time to transform.
+                </h2>
+                <h1 class="headline headline-dark">The process is simple.</h1>
+                <div class="asterisk"><p>&#x26AC;</p></div>
+              </div>
+              <p>
+                Enter the site, answer the preference-based questionairre,
+                and immediately generate a new workout with the touch of a button.
+                Less time thinking of how to mix-up your workouts and more time working.
+              </p>
+              <div class="global-headline">
+                <h2 class="sub-headline">
+                  Get AACTIV.
+                </h2>
+                <h1 class="headline headline-dark">Let's get started!</h1>
+                <div class="asterisk"><p>&#x26AC;</p></div>
+              </div>
+              <p>
+                Click the button below to return to the homepage, 
+                then click transform to enter the site.
+              </p>
+              <a href="#" class="btn body-btn">Let's get to work.</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- {/* END OF GET STARTED */} -->
+      <div class="footer-container">
+        <div class="footer-info-left">
+          <a class="links" href="#">About</a>
+          <a class="links" href="#">Contact</a>
+          <a class="links" href="#">Home</a>
+        </div>
+        <div class="footer-info-right">
+          <p>View our <a class="privacy" href="#">Privacy Policy</a></p>
+          <p>AACTIV © 2020</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
