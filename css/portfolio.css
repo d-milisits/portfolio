@@ -1,3 +1,13 @@
+/* Global FadeIn Animation */
+@keyframes fadeTransitionIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Other Global Styles */
 * {
   margin:0;
   padding:0;
@@ -7,6 +17,25 @@
 html {
   background-color: #1e272e;
 }
+/* SCROLLBAR STYLE */
+    /* Scrollbar width */
+    ::-webkit-scrollbar {
+      width: 11.5px;
+    }
+    /* Scrollbar Track */
+    ::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 5px #d2dae2;
+      border-radius: 10px;
+    }
+    /* Scrollbar handle */
+    ::-webkit-scrollbar-thumb {
+      background: #7efff5;
+      border-radius: 10px;
+    }
+    /* Hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: #34e7e4;
+    }
 /* Animation duration change */
 .animate__animated.animate__fadeInDown, .animate__animated.animate__fadeInUp {
   animation-duration: 2.35s;
@@ -42,31 +71,6 @@ html {
   display:flex;
   overflow: hidden;
   transition: .6s filter ease;
-}
-.navbar {
-  position: fixed;
-  top:0;
-  left:0;
-  height:100vh;
-  width: 10vh;
-  background-color: #2f3640;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  z-index:1000;
-}
-.fab, .fas, .fa {
-  color: #7efff5;
-  font-size: 40px;
-  transition: .3s all ease;
-}
-.fa-user-cog, .fa-home, .fa-code {
-  font-size: 35px;
-}
-.fab:hover, .fas:hover, .fa:hover {
-  cursor: pointer;
-  color: #f53b57;
 }
 .landing-box, .image {
   flex:1;

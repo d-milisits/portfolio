@@ -1,18 +1,21 @@
 /* Animation duration change */
-.animate__animated.animate__fadeIn {
-  animation-duration: 3s;
+.one, .two, .three, .four, .about-me {
+  opacity:0;
 }
-.animate__animated.animate__fadeIn.four {
-  animation-delay: 1.6s;
+.about-me {
+  animation: fadeTransitionIn 2.15s .4s forwards;
 }
-.animate__animated.animate__fadeIn.one {
-  animation-delay: .25s;
+.one {
+  animation: fadeTransitionIn 2.15s .95s forwards;
 }
-.animate__animated.animate__fadeIn.two {
-  animation-delay: .55s;
+.two {
+  animation: fadeTransitionIn 2.15s 1.4s forwards;
 }
-.animate__animated.animate__fadeIn.three {
-  animation-delay: .85s;
+.three {
+  animation: fadeTransitionIn 2.15s 1.8s forwards;
+}
+.four {
+  animation: fadeTransitionIn 2.15s 2.25s forwards;
 }
 /* About me section (left side) */
 .about-me {
@@ -29,7 +32,7 @@
 .about-me-img {
   height: 150px;
   width: 150px;
-  background-image: url("../img/my-photo.jpg");
+  background-image: url("../img/my-photo.PNG");
   background-size: cover;
   border-radius: 100%;
   box-shadow: 10px 10px 25px black;
@@ -103,4 +106,7 @@
 }
 .indent2 {
   margin-left: 45px;
+}
+button {
+  margin-top:0;
 }

@@ -1,3 +1,17 @@
+/* Page animation delay styling */
+.one, .two, .three {
+  opacity:0;
+}
+.one {
+  animation: fadeTransitionIn 1.4s .6s forwards;
+}
+.two {
+  animation: fadeTransitionIn 1.4s .9s forwards;
+}
+.three {
+  animation: fadeTransitionIn 1.4s 1.2s forwards;
+}
+/* Mail Page styling */
 .main-page {
   min-height: 100vh;
   display: flex;
@@ -12,7 +26,6 @@
   justify-content: center;
   margin: 8%;
 }
-/* Page */
 span {
   font-size: 5rem;
 }
@@ -35,11 +48,11 @@ span {
   padding: 7.5% 0;
 }
 /* form starting stylings ------------------------------- */
-.group 			  { 
+.group { 
   position:relative; 
   margin-bottom:45px; 
 }
-input 				{
+input {
   font-size:15px;
   padding:10px 10px 10px 5px;
   display:block;
@@ -50,7 +63,7 @@ input 				{
 }
 input:focus 		{ outline:none; }
 /* LABEL ======================================= */
-label 				 {
+label {
   color:white; 
   font-size:14px;
   text-transform: uppercase;
@@ -105,7 +118,6 @@ input:focus ~ .bar:before, input:focus ~ .bar:after {
   pointer-events:none;
   opacity:0.5;
 }
-
 /* active state */
 input:focus ~ .highlight {
   -webkit-animation:inputHighlighter 0.3s ease;

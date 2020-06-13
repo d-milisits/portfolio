@@ -6,7 +6,6 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-
 :root {
   --main-font: 'Bebas Neue';
   --body-font: 'Roboto Condensed';
@@ -14,13 +13,11 @@
   --secondary-font-color: #ee5253;
   --body-font-color: #fff;
 }
-
 .page {
   font-family: var(--body-font);
   font-size: 10px;
   color: var(--body-font-color);
 }
-
 .other-img {
   width: 100%;
   max-width:100%;
@@ -28,18 +25,33 @@
 a {
   text-decoration: none;
 }
-
 p {
   font-size: 1.6rem;
 }
-
 .container {
   width:100%;
   max-width:122.5rem;
   margin: 0 auto;
   padding: 0 2.4rem;
 }
-
+/* ANIMATIONS */
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.container {
+  opacity: 0;
+}
+.container {
+  animation: transitionIn 3s 0.5s forwards;
+}
+.hero .container {
+  animation: transitionIn 3s 1s forwards;
+}
 /* Header Styling */
 header {
   width:100%;

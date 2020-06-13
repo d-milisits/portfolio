@@ -1,25 +1,29 @@
-/* Global page animation delay styling */
-.animate__animated.animate__fadeIn.react {
-  animation-delay: 1.5s;
+/* Page animation delay styling */
+.react, .python, .html, .css, .flutter, .dart, .sql {
+  opacity:0;
 }
-.animate__animated.animate__fadeIn.python {
-  animation-delay: 1.75s;
+.react {
+  animation: fadeTransitionIn 1s 1.5s forwards;
 }
-.animate__animated.animate__fadeIn.html {
-  animation-delay: 2s;
+.python {
+  animation: fadeTransitionIn 1s 1.75s forwards;
 }
-.animate__animated.animate__fadeIn.css {
-  animation-delay: 2.25s;
+.html {
+  animation: fadeTransitionIn 1s 2s forwards;
 }
-.animate__animated.animate__fadeIn.flutter {
-  animation-delay: 2.5s;
+.css {
+  animation: fadeTransitionIn 1s 2.25s forwards;
 }
-.animate__animated.animate__fadeIn.dart {
-  animation-delay: 2.75s;
+.flutter {
+  animation: fadeTransitionIn 1s 2.5s forwards;
 }
-.animate__animated.animate__fadeIn.sql {
-  animation-delay: 3s;
+.dart {
+  animation: fadeTransitionIn 1s 2.75s forwards;
 }
+.sql {
+  animation: fadeTransitionIn 1s 3s forwards;
+}
+/* Stack Page Styling */
 .stack-content {
   width:100%;
   display:flex;
@@ -92,7 +96,7 @@ li.html::after {
 }
 @keyframes html {
   to {
-    width: 75%;
+    width: 80%;
   }
 }
 li.css::after {
@@ -100,7 +104,7 @@ li.css::after {
 }
 @keyframes css {
   to {
-    width: 75%;
+    width: 80%;
   }
 }
 li.flutter::after {

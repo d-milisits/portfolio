@@ -1,3 +1,20 @@
+/* Page animation delay styling */
+.one, .two, .three, .four {
+  opacity:0;
+}
+.one {
+  animation: fadeTransitionIn 1.75s .95s forwards;
+}
+.two {
+  animation: fadeTransitionIn 1.75s 1.35s forwards;
+}
+.three {
+  animation: fadeTransitionIn 1.75s 1.65s forwards;
+}
+.four {
+  animation: fadeTransitionIn 1.75s 2.1s forwards;
+}
+/* Work Styling */
 .work-page {
   display:flex;
   flex-direction: column;
@@ -49,11 +66,9 @@
   font-variant: small-caps;
 }
 img {
-  opacity: 0.65;
   display: block;
   width: 100%;
   height: auto;
-  /* transition: opacity transform .4s ease; */
 }
 .thumbnail:hover img {
   transition: .4s ease;
