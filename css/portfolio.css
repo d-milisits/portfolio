@@ -234,7 +234,7 @@ html {
   .image img {
     position:fixed;
     z-index: 100;
-    opacity: .125;
+    opacity: .24;
     top:25%;
     right: 3%;
     animation: none;
