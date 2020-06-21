@@ -161,10 +161,6 @@ html {
   z-index: 3000;
   visibility: hidden;
 }
-.success-message i {
-  font-size: 55px;
-  color: #78e08f;
-}
 .success-message h1 {
   font-weight: 800;
   letter-spacing: 1.5px;
@@ -222,6 +218,9 @@ html {
     height: 35px;
     margin-top: 12px;
   }
+  .success-message .red {
+    font-size: 2.5rem;
+  }
 }
 @media (max-width: 860px) {
   .hello {
@@ -243,7 +242,7 @@ html {
     width: 400px;
   }
 }
-@media (max-width: 750px) {
+@media (max-width: 751px) {
   .landing-box {
     margin-left: 4.5%;
   }
@@ -261,6 +260,9 @@ html {
   .langs {
     font-size: 10px;
   }
+  .success-message .red {
+    font-size: 1.85rem;
+  }
 }
 @media (max-width: 420px) {
   .hello {
@@ -268,6 +270,9 @@ html {
   }
   .langs {
     width: 90%;
+  }
+  .success-message .red {
+    font-size: 1.5rem;
   }
 }
 @media (max-width: 380px) {
