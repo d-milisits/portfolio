@@ -11,7 +11,13 @@
   align-items: center;
   z-index:1000;
 }
-.fab, .fas, .fa {
+.hamburger {
+  visibility: hidden;
+  position:fixed;
+  top: 5%;
+  left: 4%;
+}
+.fab, .fas, .fa, .hamburger {
   color: #7efff5;
   font-size: 40px;
   transition: .3s all ease;
@@ -19,7 +25,26 @@
 .fa-user-cog, .fa-home, .fa-code {
   font-size: 35px;
 }
-.fab:hover, .fas:hover, .fa:hover {
+.fab:hover, .fas:hover, .fa:hover, .hamburger:hover {
   cursor: pointer;
   color: #f53b57;
+}
+@media (max-width: 1025px) {
+  .navbar {
+    width: 7.5vh;
+  }
+  .fab, .fas, .fa {
+    font-size: 32.5px;
+  }
+  .fa-user-cog, .fa-home, .fa-code {
+    font-size: 27.5px;
+  }
+}
+@media (max-width: 750px) {
+  .navbar {
+    visibility: hidden;
+  }
+  .hamburger {
+    visibility: visible;
+  }
 }
