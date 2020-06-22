@@ -23,7 +23,7 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin-left: 10%;
+  margin-left: 6%;
   z-index: 500;
 }
 .about-me, .about-me-info {
@@ -163,5 +163,37 @@ button {
 @media (max-width: 750px) {
   .about-me-info, .about-me {
     margin-left: 0;
+  }
+}
+@media (max-width: 400px) {
+  .about-me-img {
+    height: 135px;
+    width: 135px;
+  }
+  .about-myself {
+    font-size: 1.55rem;
+    padding: 20px 20px 10px 20px;
+  }
+  .about-myself-text {
+    max-width: 75%;
+    font-size: .8rem;
+  }
+  .info-title {
+    font-size: 1.35rem;
+    width: 90%;
+    padding: 10px;
+  }
+  .info-box-content i {
+    padding: 15px;
+    color: #f53b57;
+  }
+  .info-box-content p {
+    max-width: 100%;
+    font-size: .8rem;
+  }
+  .code {
+    font-size: .8rem;
+    letter-spacing: 2px;
+    padding:20px 40px;
   }
 }

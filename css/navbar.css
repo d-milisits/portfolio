@@ -48,3 +48,8 @@
     visibility: visible;
   }
 }
+@media (max-width: 400px) {
+  .hamburger {
+    font-size: 30px;
+  }
+}

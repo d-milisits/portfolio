@@ -50,6 +50,9 @@ button:hover:before,button:hover:after{
     padding: 0 1em;
     font-size: .85em;
   }
+  .increase {
+    padding: 0 2.1em;
+  }
 }
 @media (max-width: 960px) {
   button {
