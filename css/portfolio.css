@@ -184,12 +184,123 @@ html {
 .hidden {
   visibility: hidden;
 }
+/* TOOLTIP */
+.tooltip-box {
+  display: flex;
+}
+.tooltip-box i {
+  padding-left: 15px;
+  font-size: 1.5rem;
+  margin-top: 4.25vh;
+  padding-left: 100%;
+  opacity: .65;
+}
+/* START TOOLTIP STYLES */
+[tooltip] {
+  position: relative; /* opinion 1 */
+}
+/* Applies to all tooltips */
+[tooltip]::before,
+[tooltip]::after {
+  text-transform: none; /* opinion 2 */
+  font-size: .9em; /* opinion 3 */
+  line-height: 1;
+  user-select: none;
+  pointer-events: none;
+  position: absolute;
+  display: none;
+  opacity: 0;
+}
+[tooltip]::before {
+  content: '';
+  border: 5px solid transparent; /* opinion 4 */
+  z-index: 1001; /* absurdity 1 */
+}
+[tooltip]::after {
+  content: attr(tooltip); /* magic! */
+  /* most of the rest of this is opinion */
+  text-align: center;
+  letter-spacing: .9px;
+  /* 
+    Let the content set the size of the tooltips 
+    but this will also keep them from being obnoxious
+    */
+  min-width: 3em;
+  width: 21em;
+  white-space: pre-line;
+  /* overflow: hidden;
+  text-overflow: ellipsis; */
+  padding: 2.5ch 3ch;
+  border-radius: .3ch;
+  box-shadow: 0 1em 2em -.5em rgba(0, 0, 0, 0.35);
+  background: #2f3640;
+  color: #fff;
+  z-index: 1000; /* absurdity 2 */
+  margin-left: 2vw;
+  margin-top: 1.5vh;
+}
+/* Make the tooltips respond to hover */
+[tooltip]:hover::before,
+[tooltip]:hover::after {
+  display: block;
+}
+/* don't show empty tooltips */
+[tooltip='']::before,
+[tooltip='']::after {
+  display: none !important;
+}
+/* FLOW: UP */
+[tooltip]:not([flow])::before,
+[tooltip][flow^="up"]::before {
+  bottom: 100%;
+  border-bottom-width: 0;
+  border-top-color: #333;
+}
+[tooltip]:not([flow])::after,
+[tooltip][flow^="up"]::after {
+  bottom: calc(100% + 5px);
+}
+[tooltip]:not([flow])::before,
+[tooltip]:not([flow])::after,
+[tooltip][flow^="up"]::before,
+[tooltip][flow^="up"]::after {
+  left: 50%;
+  transform: translate(-50%, -.5em);
+}
+/* FLOW: RIGHT */
+[tooltip][flow^="right"]::before {
+  top: 50%;
+  border-left-width: 0;
+  border-right-color: #333;
+  right: calc(0em - 5px);
+  transform: translate(.5em, -50%);
+}
+[tooltip][flow^="right"]::after {
+  top: 50%;
+  left: calc(100% + 5px);
+  transform: translate(.5em, -50%);
+}
+/* KEYFRAMES */
+@keyframes tooltips-horz {
+  to {
+    opacity: .9;
+    transform: translate(0, -50%);
+  }
+}
+/* FX All The Things */ 
+[tooltip][flow^="right"]:hover::after {
+  animation: tooltips-horz 300ms ease-out forwards;
+}
 @media (min-width: 2000px) {
   .hello {
     font-size: 90px;
   }
   .landing-box {
     margin-left: 8%;
+  }
+  [tooltip]::before,
+  [tooltip]::after {
+  font-size: 1.13em; /* opinion 3 */
   }
 }
 /* MOBILE STYLING */
@@ -209,6 +320,13 @@ html {
   .image img {
     height: 195px;
     width: 315px;
+  }
+  [tooltip]::before,
+  [tooltip]::after {
+  font-size: .78em; /* opinion 3 */
+  }
+  .tooltip-box i {
+    font-size: 1.25rem;
   }
 }
 @media (max-width: 960px) {
@@ -257,6 +375,13 @@ html {
   .langs {
     width: 75%;
   }
+  [tooltip]::before,
+  [tooltip]::after {
+  font-size: .75em; /* opinion 3 */
+  }
+  .tooltip-box i {
+    font-size: 1.15rem;
+  }
 }
 @media (max-width: 535px) {
   .image img {
@@ -271,6 +396,13 @@ html {
   .success-message .red {
     font-size: 1.85rem;
   }
+  [tooltip]::before,
+  [tooltip]::after {
+  font-size: .635em; /* opinion 3 */
+  }
+  .tooltip-box i {
+    font-size: 1rem;
+  }
 }
 @media (max-width: 420px) {
   .hello {
@@ -280,7 +412,19 @@ html {
     width: 90%;
   }
   .success-message .red {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+  }
+  [tooltip]::before,
+  [tooltip]::after {
+  font-size: .65em; /* opinion 3 */
+  }
+  .tooltip-box i {
+    font-size: 1.15rem;
+  }
+  [tooltip]::after {
+    width: 10em;
+    padding: 1.5ch 2ch;
+    margin-left: 8vw;
   }
 }
 @media (max-width: 380px) {
