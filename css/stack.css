@@ -131,3 +131,54 @@ li.sql::after {
     width: 50%;
   }
 }
+/* MOBILE STYLING */
+@media (max-width: 1300px) {
+  .current {
+    font-size: 2.5rem;
+  }
+  /* PROGRESS BAR STYLING */
+  ul {
+    width: 550px;
+  }
+}
+@media (max-width: 1000px) {
+  .current {
+    font-size: 2.1rem;
+  }
+  ul {
+    width: 450px;
+  }
+  li {
+    font-size: .9rem;
+  }
+}
+@media (max-width: 750px) {
+  .current {
+    font-size: 1.8rem;
+  }
+  ul {
+    width:400px;
+  }
+}
+@media (max-width: 550px) {
+  ul {
+    width: 350px;
+  }
+  li::before {
+    height: 12px;
+  }
+  li::after {
+    height: 12px;
+  }
+  li {
+    font-size: .75rem;
+  }
+}
+@media (max-width: 475px) {
+  .current {
+    font-size: 1.65rem;
+  }
+  ul {
+    width: 300px;
+  }
+}

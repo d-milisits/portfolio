@@ -113,8 +113,8 @@ button {
 /* MOBILE STYLING */
 @media (max-width: 1250px) {
   .about-me-img {
-    height: 165px;
-    width: 165px;
+    height: 160px;
+    width: 160px;
   }
   .about-myself {
     font-size: 1.75rem;
@@ -167,19 +167,19 @@ button {
 }
 @media (max-width: 400px) {
   .about-me-img {
-    height: 135px;
-    width: 135px;
+    height: 140px;
+    width: 140px;
   }
   .about-myself {
-    font-size: 1.55rem;
+    font-size: 1.53rem;
     padding: 20px 20px 10px 20px;
   }
   .about-myself-text {
     max-width: 75%;
-    font-size: .8rem;
+    font-size: .78rem;
   }
   .info-title {
-    font-size: 1.35rem;
+    font-size: 1.33rem;
     width: 90%;
     padding: 10px;
   }
@@ -189,10 +189,10 @@ button {
   }
   .info-box-content p {
     max-width: 100%;
-    font-size: .8rem;
+    font-size: .78rem;
   }
   .code {
-    font-size: .8rem;
+    font-size: .78rem;
     letter-spacing: 2px;
     padding:20px 40px;
   }
