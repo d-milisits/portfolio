@@ -184,6 +184,14 @@ html {
 .hidden {
   visibility: hidden;
 }
+@media (min-width: 2000px) {
+  .hello {
+    font-size: 90px;
+  }
+  .landing-box {
+    margin-left: 8%;
+  }
+}
 /* MOBILE STYLING */
 @media (max-width: 1400px) {
   .image {
