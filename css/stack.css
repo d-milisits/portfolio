@@ -172,13 +172,17 @@ li.sql::after {
   }
   li {
     font-size: .75rem;
+    padding-top: 15px;
   }
 }
 @media (max-width: 475px) {
   .current {
-    font-size: 1.65rem;
+    font-size: 1.5rem;
   }
   ul {
-    width: 300px;
+    width: 275px;
+  }
+  li {
+    font-size: .6rem;
   }
 }
