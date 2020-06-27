@@ -50,6 +50,7 @@
 }
 .work-intro {
   margin-bottom: 35px;
+  text-align: center;
 }
 .aactiv-content, .goodside-content {
   margin: 15px;
@@ -78,4 +79,76 @@ img {
 .thumbnail:hover .thumbnail-text {
   transition: .4s all ease;
   color: #f53b57;
+}
+/* MOBILE STYLING */
+@media (max-width: 1175px) {
+  .some {
+    font-size: 3rem;
+  }
+  .some-p {
+    font-size: 1rem;
+  }
+  .work-page img {
+    height: 150px;
+    width: 325px;
+  }
+}
+@media (max-width: 1000px) {
+  .some {
+    font-size: 2.8rem;
+  }
+  .some-p {
+    font-size: .9rem;
+  }
+  .work-page img {
+    height: 125px;
+    width: 275px;
+  }
+  .thumbnail-text {
+    font-size: .9rem;
+  }
+}
+@media (max-width: 875px) {
+  .work-content {
+    flex-direction: column;
+  }
+}
+@media (max-width: 520px) {
+  .work-page {
+    padding-left:0;
+    padding-right:0;
+  }
+}
+@media (max-width: 600px) {
+  .some {
+    font-size: 2.25rem;
+  }
+  .some-p {
+    font-size: .75rem;
+  }
+  .work-page img {
+    height: 115px;
+    width: 250px;
+  }
+  .thumbnail-text {
+    font-size: .75rem;
+  }
+}
+@media (max-width: 420px) {
+  .some {
+    font-size: 2rem;
+  }
+  .some-p {
+    font-size: .6rem;
+  }
+  .work-page img {
+    height: 110px;
+    width: 225px;
+  }
+  .thumbnail-text {
+    font-size: .7rem;
+  }
+  .work-intro {
+    margin-bottom:0;
+  }
 }
