@@ -4,6 +4,7 @@ let index = 0;
 let currentText = '';
 let letter = '';
 
+// Typing animation for homepage-- onload
 (function type() {
   
   if(count === texts.length) {
@@ -31,6 +32,7 @@ function flyOut() {
   }, 550);
 }
 
+// Fadeout right animation & reroute to HTML parameter
 function flyRight(route) {
   var a = document.getElementById('main-page');
   a.className += " animate__animated animate__zoomOut";
@@ -39,6 +41,7 @@ function flyRight(route) {
   }, 550);
 }
 
+// Blur animation for onclick events/greetings
 function blurAndPrompt(target) {
   if (target=="mail") {
     var a = document.getElementById('main-page');
@@ -72,6 +75,7 @@ function blurAndPrompt(target) {
   }
 }
 
+// Error handling for empty message fields
 function sendMessage() {
   var errorField = document.getElementById('error');
   name = document.getElementById("name").value;
@@ -81,9 +85,17 @@ function sendMessage() {
     errorField.className = "error animate__animated animate__headShake shown";
   }
   else {
-    // document.getElementById("name").value = "";
-    // document.getElementById("email").value = "";
-    // document.getElementById("message").value = "";
     errorField.className = "error";
   }
+}
+
+// Mobile navbar opening
+function Animation() {
+  const selectElement = function (element) {
+    return document.querySelector(element);
+  };
+  
+  let body = selectElement('body');
+
+  body.classList.toggle('open');
 }
