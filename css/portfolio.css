@@ -350,7 +350,7 @@ html {
 }
 @media (max-width: 860px) {
   .hello {
-    z-index: 1000;
+    z-index: 200;
     font-size: 55px;
   }
   .image {
