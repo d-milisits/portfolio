@@ -426,9 +426,12 @@ html {
     padding: 1.5ch 2ch;
     margin-left: 8vw;
   }
-}
-@media (max-width: 380px) {
   .image img {
-    display:none;
+    height: 200px;
+    width: 315px;
+    top: 32.5%;
+    right: -3%;
+    opacity: .0225;
+    transform: rotate(25deg);
   }
 }
