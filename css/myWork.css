@@ -155,6 +155,8 @@ img {
   }
   .some-p {
     font-size: .6rem;
+    width:65%;
+    margin:auto;
   }
   .work-page img {
     height: 110px;

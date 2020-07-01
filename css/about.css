@@ -180,6 +180,9 @@ button {
   }
 }
 @media (max-width: 415px) {
+  .about-me {
+    margin-top: 4.5vh;
+  }
   .about-me-img {
     height: 132.5px;
     width: 132.5px;

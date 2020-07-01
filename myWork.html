@@ -10,6 +10,15 @@
     <link rel="stylesheet" href="css/fontawesome.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <script>
+      let vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+      window.addEventListener('resize', () => {
+        let vh = window.innerHeight * 0.01;
+        document.documentElement.style.setProperty('--vh', `${vh}px`);
+      });
+    </script>
   </head>
   <body>
     <div class="navbar">
@@ -55,8 +64,8 @@
           </div>
           <div class="goodside-content two">
             <div class="thumbnail">
-              <a href="./MyWork/GoodSIde/GoodSide.html" target="_blank"><img src="img/thumbails/GoodSideMain.PNG" /></a>
-              <p class="thumbnail-text">Charity Homepage</p>
+              <a href="#" target="_blank"><img src="img/thumbails/InvestorPreview.PNG" /></a>
+              <p class="thumbnail-text">Investor Collectibles</p>
             </div>
             <div class="thumbnail four">
               <a href="https://www.youtube.com/channel/UC8t-EcEO0Yur8tNWPtNJ_yg" target="blank"><img src="img/thumbails/YoutubePreview.PNG" /></a>
