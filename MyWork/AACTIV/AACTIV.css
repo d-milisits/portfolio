@@ -413,7 +413,6 @@ a {
 }
 .footer-container .footer-info-right a:hover {
   color:black;
-  font-weight: 600;
 }
 /* HOMEPAGE MOBILE MEDIA QUERIES */
 @media (max-width: 1000px) {
@@ -461,6 +460,11 @@ a {
   }
   .point-info, .start-info {
     padding: 1.5rem 0 5rem 0;
+  }
+  .footer-container .footer-info-left a, 
+  .footer-container .footer-info-right a,
+  .footer-container .footer-info-right p {
+    font-size: .9rem;
   }
 }
 @media (max-width: 474px) {

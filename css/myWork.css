@@ -49,8 +49,10 @@
   cursor: pointer;
 }
 .work-intro {
+  /* margin-top: 10%; */
   margin-bottom: 35px;
   text-align: center;
+  animation-delay: .55s;
 }
 .aactiv-content, .goodside-content {
   margin: 15px;
@@ -135,6 +137,19 @@ img {
   }
 }
 @media (max-width: 420px) {
+  .one {
+    animation: fadeTransitionIn 1.75s .95s forwards;
+  }
+  .three {
+    animation: fadeTransitionIn 1.75s 1.35s forwards;
+  }
+  .two {
+    animation: fadeTransitionIn 1.75s 1.65s forwards;
+  }
+  .four {
+    animation: none;
+    opacity: 1;
+  }
   .some {
     font-size: 2rem;
   }
@@ -144,6 +159,9 @@ img {
   .work-page img {
     height: 110px;
     width: 225px;
+  }
+  .thumbnail img {
+    margin-bottom: 35px;
   }
   .thumbnail-text {
     font-size: .7rem;

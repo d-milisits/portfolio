@@ -10,6 +10,15 @@
     <link rel="stylesheet" href="css/fontawesome.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <script>
+      let vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+      window.addEventListener('resize', () => {
+        let vh = window.innerHeight * 0.01;
+        document.documentElement.style.setProperty('--vh', `${vh}px`);
+      });
+    </script>
   </head>
   <body>
     <div class="navbar">
@@ -38,7 +47,7 @@
     </nav>
     <div id="main-page" class="main-page">
       <div class="stack-content">
-        <h1 class="current animate__animated animate__fadeInDown">My current language stack</h1>
+        <h1 class="current animate__animated animate__flipInX">My current language stack</h1>
         <ul>
           <li class="react">React.js</li>
           <li class="python">Python3</li>

@@ -36,6 +36,7 @@
   letter-spacing: 1px;
   font-weight: 200;
   font-size: 3rem;
+  animation-delay: .75s;
 }
 /* PROGRESS BAR STYLING */
 ul {

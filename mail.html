@@ -12,6 +12,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script>
+      let vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+      window.addEventListener('resize', () => {
+        let vh = window.innerHeight * 0.01;
+        document.documentElement.style.setProperty('--vh', `${vh}px`);
+      });
+    </script>
     <script src="app.js"></script>
   </head>
   <body onload="blurAndPrompt('mail')">
@@ -41,8 +50,8 @@
     <div id="main-page" class="main-page">
       <form action="https://formspree.io/danthedev9557@gmail.com" method="POST"> 
         <div class="email-form">
-          <div class="animate__animated animate__fadeInDown">
-            <h1 class="work-together"><span class="cursive">Let's work together!</span></h1>
+          <div>
+            <h1 class="work-together animate__animated animate__flipInX"><span class="cursive">Let's work together!</span></h1>
           </div>
           <div id="error" class="error">
             <p class="error-message">Please fill out all required fields!</p>
@@ -65,7 +74,7 @@
             <span class="bar"></span>
             <label>Message</label>
           </div>
-          <button class="animate__animated animate__fadeInUp" onclick="sendMessage()">Contact Me!</button>
+          <button class="animate__animated animate__flipInX" onclick="sendMessage()">Contact Me!</button>
         </div>
       </form>
     </div>

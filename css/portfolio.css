@@ -65,7 +65,8 @@ html {
 }
 /* MAIN PAGE STYLING */
 .main-page {
-  min-height: 100vh;
+  min-height:100vh;
+  min-height:calc(var(--vh, 1vh) * 100);
   max-width:100vw;
   background-color: #1e272e;
   display:flex;
@@ -80,7 +81,6 @@ html {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  height:100vh;
   margin-left: 8%;
 }
 .hello {
@@ -152,7 +152,8 @@ html {
 /* PageRoute success message */
 .success-message {
   position:fixed;
-  height: 100vh;
+  height:100vh;
+  height:calc(var(--vh, 1vh) * 100);  
   width: 100vw;
   display:flex;
   flex-direction: column;
@@ -187,6 +188,7 @@ html {
 /* TOOLTIP */
 .tooltip-box {
   display: flex;
+  animation-delay: 1s;
 }
 .tooltip-box i {
   padding-left: 15px;
@@ -433,5 +435,17 @@ html {
     right: -3%;
     opacity: .0225;
     transform: rotate(25deg);
+  }
+}
+@media (max-width: 361px) {
+  .hello {
+    font-size: 35px;
+  }
+  .langs {
+    font-size: 8.25px;
+  }
+  .typing::after {
+    height: 27.5px;
+    margin-top: 10px;
   }
 }

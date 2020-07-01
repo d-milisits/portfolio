@@ -23,22 +23,34 @@ let letter = '';
 }());
 
 function flyOut() {
-  var a = document.getElementById('landing-box');
-  var b = document.getElementById('image');
-  a.className += " animate__animated animate__bounceOutUp";
-  b.className += " animate__animated animate__bounceOutDown";
-  setTimeout(function() {
-    window.location.href = 'about.html';
-  }, 550);
+  if (screen.width > 535) {
+    var a = document.getElementById('landing-box');
+    var b = document.getElementById('image');
+    a.className += " animate__animated animate__bounceOutUp";
+    b.className += " animate__animated animate__bounceOutDown";
+    setTimeout(function() {
+      window.location.href = 'about.html';
+    }, 550);
+  } else {
+    setTimeout(function() {
+      window.location.href = 'about.html';
+    }, 400);
+  }
 }
 
 // Fadeout right animation & reroute to HTML parameter
 function flyRight(route) {
-  var a = document.getElementById('main-page');
-  a.className += " animate__animated animate__zoomOut";
-  setTimeout(function() {
-    window.location.href = route;
-  }, 550);
+  if (screen.width > 535) {
+    var a = document.getElementById('main-page');
+    a.className += " animate__animated animate__zoomOut";
+    setTimeout(function() {
+      window.location.href = route;
+    }, 550);
+  } else {
+    setTimeout(function() {
+      window.location.href = route;
+    }, 150);
+  }
 }
 
 // Blur animation for onclick events/greetings

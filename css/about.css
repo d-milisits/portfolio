@@ -1,21 +1,22 @@
 /* Animation duration change */
-.one, .two, .three, .four, .about-me {
+.one, .two, .three, .about-me {
   opacity:0;
 }
 .about-me {
   animation: fadeTransitionIn 2.15s .4s forwards;
 }
 .one {
-  animation: fadeTransitionIn 2.15s .95s forwards;
+  animation: fadeTransitionIn 2.15s .75s forwards;
 }
 .two {
-  animation: fadeTransitionIn 2.15s 1.4s forwards;
+  animation: fadeTransitionIn 2.15s 1.2s forwards;
 }
 .three {
-  animation: fadeTransitionIn 2.15s 1.8s forwards;
+  animation: fadeTransitionIn 2.15s 1.6s forwards;
 }
 .four {
-  animation: fadeTransitionIn 2.15s 2.25s forwards;
+  animation-delay: 2s;
+  /* animation: fadeTransitionIn 2.15s 2.25s forwards; */
 }
 /* About me section (left side) */
 .about-me {
@@ -161,11 +162,24 @@ button {
   }
 }
 @media (max-width: 750px) {
+  .about-me {
+    animation: fadeTransitionIn 2.15s .4s forwards;
+  }
+  .one {
+    animation-delay: 1.55s;
+  }
+  .two, .three {
+    animation: none;
+    opacity: 1;
+  }
+  .four {
+    animation-delay: 1s;
+  }
   .about-me-info, .about-me {
     margin-left: 0;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 415px) {
   .about-me-img {
     height: 132.5px;
     width: 132.5px;

@@ -13,7 +13,8 @@
 }
 /* Mail Page styling */
 .main-page {
-  min-height: 100vh;
+  height:100vh;
+  height:calc(var(--vh, 1vh) * 100);  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,6 +48,7 @@ span {
   text-align: center;
   width:100%;
   padding: 7.5% 0;
+  animation-delay: .25s;
 }
 /* form starting stylings ------------------------------- */
 .group { 
@@ -138,6 +140,9 @@ input:focus ~ .highlight {
 @keyframes inputHighlighter {
 	from { background:#f53b57; }
   to 	{ width:0; background:transparent; }
+}
+button {
+  animation-delay: 1.5s;
 }
 .cursive {
   font-family: 'Pacifico';
