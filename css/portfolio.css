@@ -65,7 +65,7 @@ html {
 }
 /* MAIN PAGE STYLING */
 .main-page {
-  height:100vh;
+  min-height:100vh;
   min-height:calc(var(--vh, 1vh) * 100);
   max-width:100vw;
   background-color: #1e272e;
@@ -386,8 +386,8 @@ html {
   }
 }
 @media (max-width: 535px) {
-  .main .red {
-    font-size: 2.5rem;
+  .success-message .red {
+    font-size: 2.55rem;
   }
   .image img {
     opacity: .075;
@@ -397,9 +397,6 @@ html {
   }
   .langs {
     font-size: 10px;
-  }
-  .success-message .red {
-    font-size: 1.85rem;
   }
   [tooltip]::before,
   [tooltip]::after {
@@ -415,9 +412,6 @@ html {
   }
   .langs {
     width: 90%;
-  }
-  .success-message .red {
-    font-size: 1.2rem;
   }
   [tooltip]::before,
   [tooltip]::after {

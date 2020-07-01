@@ -16,6 +16,7 @@
   position:fixed;
   top: 5%;
   left: 4%;
+  z-index: 500;
 }
 .fab, .fas, .fa, .hamburger, .times {
   color: #7efff5;
