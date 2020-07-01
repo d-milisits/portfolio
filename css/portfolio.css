@@ -386,9 +386,6 @@ html {
   }
 }
 @media (max-width: 535px) {
-  .success-message .red {
-    font-size: 2.55rem;
-  }
   .image img {
     opacity: .075;
   }
@@ -397,6 +394,12 @@ html {
   }
   .langs {
     font-size: 10px;
+  }
+  .success-message .red {
+    font-size: 1.85rem;
+  }
+  .main .red {
+    font-size: 2.65rem;
   }
   [tooltip]::before,
   [tooltip]::after {
