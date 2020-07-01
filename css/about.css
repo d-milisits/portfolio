@@ -168,10 +168,10 @@ button {
   .one {
     animation-delay: 1.55s;
   }
-  .two, .three {
+  /* .two, .three {
     animation: none;
     opacity: 1;
-  }
+  } */
   .four {
     animation-delay: 1s;
   }
