@@ -65,7 +65,7 @@ html {
 }
 /* MAIN PAGE STYLING */
 .main-page {
-  min-height:100vh;
+  height:100vh;
   min-height:calc(var(--vh, 1vh) * 100);
   max-width:100vw;
   background-color: #1e272e;
@@ -386,6 +386,9 @@ html {
   }
 }
 @media (max-width: 535px) {
+  .main .red {
+    font-size: 2.5rem;
+  }
   .image img {
     opacity: .075;
   }
