@@ -3,25 +3,25 @@
   opacity:0;
 }
 .react {
-  animation: fadeTransitionIn 1s 1.5s forwards;
+  animation: fadeTransitionIn 1s 1.3s forwards;
 }
 .python {
-  animation: fadeTransitionIn 1s 1.75s forwards;
+  animation: fadeTransitionIn 1s 1.45s forwards;
 }
 .html {
-  animation: fadeTransitionIn 1s 2s forwards;
+  animation: fadeTransitionIn 1s 1.6s forwards;
 }
 .css {
-  animation: fadeTransitionIn 1s 2.25s forwards;
+  animation: fadeTransitionIn 1s 1.75s forwards;
 }
 .flutter {
-  animation: fadeTransitionIn 1s 2.5s forwards;
+  animation: fadeTransitionIn 1s 1.9s forwards;
 }
 .dart {
-  animation: fadeTransitionIn 1s 2.75s forwards;
+  animation: fadeTransitionIn 1s 2.05s forwards;
 }
 .sql {
-  animation: fadeTransitionIn 1s 3s forwards;
+  animation: fadeTransitionIn 1s 2.2s forwards;
 }
 /* Stack Page Styling */
 .stack-content {
@@ -72,7 +72,7 @@ li::after {
   border-radius: 1000px;
   opacity: 1;
   animation-duration: 1.3s;
-  animation-delay: 3.35s;
+  animation-delay: 2.65s;
   animation-timing-function: ease;
   animation-fill-mode: forwards;
 }

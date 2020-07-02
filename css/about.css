@@ -9,13 +9,13 @@
   animation: fadeTransitionIn 2.15s .75s forwards;
 }
 .two {
-  animation: fadeTransitionIn 2.15s 1.2s forwards;
+  animation: fadeTransitionIn 2.15s 1.05s forwards;
 }
 .three {
-  animation: fadeTransitionIn 2.15s 1.6s forwards;
+  animation: fadeTransitionIn 2.15s 1.4s forwards;
 }
 .four {
-  animation-delay: 2s;
+  animation-delay: 1.65s;
   /* animation: fadeTransitionIn 2.15s 2.25s forwards; */
 }
 /* About me section (left side) */
@@ -183,6 +183,9 @@ button {
   .about-me {
     margin-top: 4.5vh;
     z-index:400;
+  }
+  .about-me-info {
+    padding-bottom: 4.5vh;
   }
   .about-me-img {
     height: 132.5px;
