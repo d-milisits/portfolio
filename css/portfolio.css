@@ -170,7 +170,7 @@ html {
 }
 .success-message .red {
   font-size: 3rem;
-  letter-spacing: 3px;
+  letter-spacing: -1px;
   font-family: 'Pacifico';
 }
 .success-message .thin {
@@ -396,7 +396,7 @@ html {
   }
   .success-message .red {
     font-size: 1.85rem;
-    letter-spacing: -1px;
+    letter-spacing: -1.5px;
   }
   .main .red {
     font-size: 2.65rem;
@@ -434,7 +434,7 @@ html {
     width: 315px;
     top: 32.5%;
     right: -3%;
-    opacity: .035;
+    opacity: .0725;
     transform: rotate(25deg);
   }
 }

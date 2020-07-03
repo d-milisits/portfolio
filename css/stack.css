@@ -33,10 +33,16 @@
 }
 .current {
   font-family: 'Pacifico';
-  letter-spacing: 1px;
+  letter-spacing: .5px;
   font-weight: 200;
   font-size: 3rem;
   animation-delay: .75s;
+}
+.back {
+  position: fixed;
+  top: 5%;
+  left: 4%;
+  visibility: hidden;
 }
 /* PROGRESS BAR STYLING */
 ul {
@@ -154,6 +160,9 @@ li.sql::after {
   }
 }
 @media (max-width: 750px) {
+  .back {
+    visibility: visible;
+  }
   .current {
     font-size: 1.8rem;
   }
@@ -162,6 +171,10 @@ li.sql::after {
   }
 }
 @media (max-width: 550px) {
+  .back {
+    visibility: visible;
+    font-size: .2rem;
+  }
   ul {
     width: 350px;
   }

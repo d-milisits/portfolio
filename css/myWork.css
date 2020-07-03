@@ -25,9 +25,8 @@
 }
 .some {
   font-family: 'Pacifico';
-  letter-spacing: 1.5px;
   font-size: 3.5rem;
-  color: #7efff5;
+  color: #f5f6fa;
   padding: 15px;
   font-weight: 400;
 }
@@ -151,7 +150,7 @@ img {
     opacity: 1;
   }
   .some {
-    font-size: 2rem;
+    font-size: 1.65rem;
   }
   .some-p {
     font-size: .6rem;

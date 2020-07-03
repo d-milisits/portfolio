@@ -49,9 +49,20 @@
     visibility: visible;
   }
 }
+@media (max-width: 550px) {
+  .back {
+    top: 3%;
+    font-size: 1.75rem;
+  }
+}
 @media (max-width: 400px) {
   .hamburger, .times {
     font-size: 30px;
+  }
+  .back {
+    top: 3%;
+    left: 6%;
+    font-size: 1.35rem;
   }
 }
 /* MOBILE NAVBAR STYLING */

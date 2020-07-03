@@ -48,7 +48,13 @@ span {
   text-align: center;
   width:100%;
   padding: 7.5% 0;
-  animation-delay: .25s;
+}
+.envelope {
+  animation-delay: .285s;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 /* form starting stylings ------------------------------- */
 .group { 
@@ -145,9 +151,9 @@ button {
   animation-delay: 1.5s;
 }
 .cursive {
+  letter-spacing: 0;
   font-family: 'Pacifico';
   font-size: 2.5rem;
-  letter-spacing: 2px;
   text-transform: none;
   font-weight: 200;
   padding:0;
