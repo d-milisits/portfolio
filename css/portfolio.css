@@ -303,6 +303,10 @@ html {
   [tooltip]::after {
   font-size: 1.13em; /* opinion 3 */
   }
+  .image img {
+    height: 400px;
+    width: 625px;
+  }
 }
 /* MOBILE STYLING */
 @media (max-width: 1400px) {
@@ -434,7 +438,7 @@ html {
     width: 315px;
     top: 32.5%;
     right: -3%;
-    opacity: .0725;
+    opacity: .0745;
     transform: rotate(25deg);
   }
 }

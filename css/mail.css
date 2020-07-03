@@ -34,6 +34,7 @@ span {
 .red {
   color: #f53b57;
   opacity: 1;
+  padding-left: 50px;
 }
 .white {
   color:white;
@@ -238,5 +239,8 @@ button {
   }
   .email-form {
     margin-left:0;
+  }
+  .red {
+    padding-left:0;
   }
 }
