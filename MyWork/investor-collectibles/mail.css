@@ -1,0 +1,219 @@
+* {
+  margin:0;
+  padding:0;
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+}
+a {
+  color:inherit;
+  text-decoration: none;
+}
+.mail {
+  position: relative;
+  height:100vh;
+  height:calc(var(--vh, 1vh) * 100);    
+  width:100vw;
+  background-color: #1e272e;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.mail .fa-arrow-left {
+  position:absolute;
+  top:8%;
+  left: 5%;
+  font-size: 55px;
+  color:rgb(255, 213, 93);
+  z-index:200;
+}
+.mail .fa-envelope-open {
+  font-size: 7rem;
+  color:rgb(255, 213, 93);
+  margin-bottom: 50px;
+}
+.group-div {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding:100px;
+  z-index:100;
+}
+/* INPUT STYLING */
+    .group { 
+      position:relative; 
+      margin-bottom:45px; 
+    }
+    input {
+      font-size:15px;
+      color: #f5f6fa;
+      padding:10px 10px 10px 5px;
+      display:block;
+      width:300px;
+      border:none;
+      border-bottom:1px solid #f5f6fa;
+      background-color: #1e272e;
+    }
+    input:focus 		{ outline:none; }
+    /* LABEL ======================================= */
+    label {
+      color:#f5f6fa; 
+      font-size:14px;
+      text-transform: uppercase;
+      font-weight:normal;
+      position:absolute;
+      pointer-events:none;
+      left:5px;
+      top:10px;
+      transition:0.2s ease all; 
+      -moz-transition:0.2s ease all; 
+      -webkit-transition:0.2s ease all;
+    }
+    /* active state */
+    input:focus ~ label, input:valid ~ label 		{
+      top:-20px;
+      font-size:14px;
+      color:rgb(255, 213, 93);
+    }
+    /* BOTTOM BARS ================================= */
+    .bar 	{ position:relative; display:block; width:100%; }
+    .bar:before, .bar:after 	{
+      content:'';
+      height:2px; 
+      width:0;
+      bottom:1px; 
+      position:absolute;
+      background:rgb(255, 213, 93); 
+      transition:0.2s ease all; 
+      -moz-transition:0.2s ease all; 
+      -webkit-transition:0.2s ease all;
+    }
+    .bar:before {
+      left:50%;
+    }
+    .bar:after {
+      right:50%; 
+    }
+    /* active state */
+    input:focus ~ .bar:before, input:focus ~ .bar:after {
+      width:50%;
+    }
+    /* HIGHLIGHTER ================================== */
+    .highlight {
+      position:absolute;
+      height:60%; 
+      width:100px; 
+      top:25%; 
+      left:0;
+      pointer-events:none;
+      opacity:0.5;
+    }
+    /* active state */
+    input:focus ~ .highlight {
+      -webkit-animation:inputHighlighter 0.3s ease;
+      -moz-animation:inputHighlighter 0.3s ease;
+      animation:inputHighlighter 0.3s ease;
+    }
+
+    /* ANIMATIONS ================ */
+    @-webkit-keyframes inputHighlighter {
+      from { background:#f5f6fa; }
+      to 	{ width:0; background:transparent; }
+    }
+    @-moz-keyframes inputHighlighter {
+      from { background:#f5f6fa; }
+      to 	{ width:0; background:transparent; }
+    }
+    @keyframes inputHighlighter {
+      from { background:#f5f6fa; }
+      to 	{ width:0; background:transparent; }
+    }
+/* INPUT TRANSITIONS */
+/* ANIMATIONS */
+@keyframes transitionIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+.group-div, .one, .two, .three, .group-div a {
+  opacity: 0;
+}
+.group-div {
+  animation: transitionIn 3.5s 0.5s forwards;
+}
+.one {
+  animation: transitionIn 3.5s 1s forwards;
+}
+.two {
+  animation: transitionIn 3.5s 1.35s forwards;
+}
+.three {
+  animation: transitionIn 3.5s 1.7s forwards;
+}
+.group-div a {
+  animation: transitionIn 3.5s 2.25s forwards;
+}
+.group-div a, .group-div a {
+  color: rgb(255, 213, 93);
+  border: 1px solid rgb(255, 213, 93);
+  padding: 12.5px 45px;
+  margin: 40px;
+  transition: .25s;
+}
+.group-div a:hover, .group-div a:hover {
+  background-color: rgb(255, 213, 93);
+  color: #1e272e;
+}
+@media (max-width: 440px) {
+  .mail .fa-arrow-left {
+    top:2%;
+    font-size: 35px;
+  }
+  .mail .fa-envelope-open {
+    font-size: 3.25rem;
+  }
+  .group { 
+    position:relative; 
+    margin-bottom:45px; 
+  }
+  input {
+    font-size:13px;
+    width:225px;
+  }
+  label {
+    font-size:12px;
+  }
+  input:focus ~ label, input:valid ~ label 		{
+    font-size:12px;
+  }
+  .group-div a, .group-div a {
+    text-align: center;
+    font-size: .75rem;
+    padding: 10px 30px;
+    margin-top: 10px;
+  }
+}
+@media (max-width: 321px) {
+  .mail .fa-arrow-left {
+    top:3.5%;
+    font-size: 25px;
+  }
+  .mail .fa-envelope-open {
+    font-size: 3rem;
+  }
+  .group { 
+    margin-bottom:40px; 
+  }
+  input {
+    font-size:11px;
+    width:200px;
+  }
+  label {
+    font-size:10px;
+  }
+  input:focus ~ label, input:valid ~ label 		{
+    font-size:10px;
+  }
+  .group-div a, .group-div a {
+    font-size: .7rem;
+    padding: 8px 15px;
+  }
+}
