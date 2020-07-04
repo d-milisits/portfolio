@@ -110,6 +110,16 @@
 button {
   margin-top:0;
 }
+.four {
+  width: 250px;
+}
+.four i {
+  color: #1e272e;
+  font-size: .875rem;
+}
+.four:hover i {
+  color: #f53b57;
+}
 /* MOBILE STYLING */
 @media (max-width: 1250px) {
   .about-me-img {
@@ -215,5 +225,8 @@ button {
     font-size: .725rem;
     letter-spacing: 2px;
     padding:20px 40px;
+  }
+  .four {
+    width: 185px;
   }
 }

@@ -16,7 +16,7 @@ button{
   outline:none;
   margin-top: 3.25vh;
 }
-button:hover{
+button:hover {
   background:#1e272e;
   transition:400ms ease all;
   color:#f53b57;
