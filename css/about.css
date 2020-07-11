@@ -120,6 +120,30 @@ button {
 .four:hover i {
   color: #f53b57;
 }
+@media (min-width: 2000px) {
+  .about-me-img {
+    height: 265px;
+    width: 265px;
+  }
+  .about-myself {
+    font-size: 2.65rem;
+    padding-bottom: 30px;
+  }
+  .about-myself-text {
+    max-width: 45%;
+    font-size: 1.05rem;
+  }
+  .info-title {
+    font-size: 2.1rem;
+  }
+  .info-box-content i {
+    font-size: 2.75rem;
+  }
+  .info-box-content p {
+    max-width: 45%;
+    font-size: 1.05rem;
+  }
+}
 /* MOBILE STYLING */
 @media (max-width: 1250px) {
   .about-me-img {
