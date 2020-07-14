@@ -1,13 +1,15 @@
+// Variables for typing animation below.
 const texts = ['fullstack developer', 'finance graduate', 'lifelong student'];
 let count = 0;
 let index = 0;
 let currentText = '';
 let letter = '';
-
-// Typing animation for homepage-- onload
+// Typing animation for homepage-- triggers onLoad. Iterate through words (texts)-- 
+// When it reaches >length, return to first index.
 (function type() {
   
   if(count === texts.length) {
+    // Reset to 0 after last index.
     count = 0;
   }
   currentText = texts[count];
@@ -22,7 +24,9 @@ let letter = '';
 
 }());
 
+// Animation trigger for landing page. Reroutes to about page onClick.
 function flyOut() {
+  // Does not trigger on mobile devices/small screens.
   if (screen.width > 535) {
     var a = document.getElementById('landing-box');
     var b = document.getElementById('image');
@@ -32,14 +36,16 @@ function flyOut() {
       window.location.href = 'about.html';
     }, 550);
   } else {
+    // Conditional triggering of animation for larger screens.
     setTimeout(function() {
       window.location.href = 'about.html';
     }, 400);
   }
 }
 
-// Fadeout right animation & reroute to HTML parameter
+// Zoom out animation & re-route.
 function flyRight(route) {
+  // Does not trigger on mobile devices/small screens.
   if (screen.width > 535) {
     var a = document.getElementById('main-page');
     a.className += " animate__animated animate__zoomOut";
@@ -47,17 +53,21 @@ function flyRight(route) {
       window.location.href = route;
     }, 550);
   } else {
+    // Conditional triggering of animation for larger screens.
     setTimeout(function() {
       window.location.href = route;
     }, 150);
   }
 }
 
-// Blur animation for onclick events/greetings
+// Blur animation for onclick events/greetings (e.g. mail page/landing page).
 function blurAndPrompt(target) {
+
+  // UNIQUE FOR MAIL PAGE
   if (target=="mail") {
     var a = document.getElementById('main-page');
     var b = document.getElementById('success-message');
+    // Blur screen, introduce greeting, remove blur. 
     setTimeout(function() {
       a.className += " blur";
     }, 2250);
@@ -70,10 +80,12 @@ function blurAndPrompt(target) {
     }, 4000);
   }
 
+  // UNIQUE FOR LANDING PAGE
   if(target=="home") {
     var a = document.getElementById('main-page');
     var b = document.getElementById('success-message');
     a.className += " blur";
+    // Blur screen, introduce greeting, remove blur. 
     setTimeout(function() {
       b.className += " animate__animated animate__fadeIn shown";
     }, 150);
@@ -87,7 +99,7 @@ function blurAndPrompt(target) {
   }
 }
 
-// Error handling for empty message fields
+// Error handling for empty message fields on mail page. (Triggers if any values are empty). 
 function sendMessage() {
   var errorField = document.getElementById('error');
   name = document.getElementById("name").value;
@@ -101,7 +113,7 @@ function sendMessage() {
   }
 }
 
-// Mobile navbar opening
+// Mobile navbar animation/opening trigger.
 function Animation() {
   const selectElement = function (element) {
     return document.querySelector(element);

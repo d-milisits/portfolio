@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <script>
+      // Script used to declare 100vh, responsive on mobile devices. Ignores address bars. Re-used in other files.
       let vh = window.innerHeight * 0.01;
       document.documentElement.style.setProperty('--vh', `${vh}px`);
 
@@ -54,7 +55,7 @@
           <h3 class="langs">Front-end / Python Dominant Backend Development</h3>
           <div class="tooltip-box animate__animated animate__flipInX">
             <button onclick="blurAndPrompt('home')">Learn About Me</button>
-            <span tooltip="This website was developed using purely HTML, CSS & JavaScript. Feel free to review the code on my GitHub :)" flow="right"><i class="fa fa-info-circle" aria-hidden="true"></i></span>
+            <span tooltip="This website was developed using purely HTML, CSS & JavaScript. Click this icon to view the code :)" flow="right"><i class="fa fa-info-circle" aria-hidden="true"></i></span>
           </div>
         </div>
         <div id="image" class="image">
